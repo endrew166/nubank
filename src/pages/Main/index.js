@@ -1,34 +1,36 @@
 import React from 'react';
 import {View, Text} from 'react-native';
-import {styles} from './styles'
+import {Container,Content,Card,CardHeader,CardContent,CardFooter,Title,Description ,Anottation,styles} from './styles'
 import Header from '../../components/Header';
 import Tab from '../../components/Tab'
 import Icon from '@expo/vector-icons/MaterialIcons';
 export default function Main(){
     return(
-        <View style = {styles.container}>
+        <Container>
             <Header/>
-            <View style={styles.content}>
-                <View style={styles.card}>
-                    <View style={styles.cardHeader}>
+            <Content>
+                <Card>
+                    
+                   
+                    < CardHeader>
                             <Icon name="attach-money" size={28} color="#666"/>
                             <Icon name="visiblity-off" size={28} color="#666"/>
 
-                    </View>
-                    <View style={styles.cardContent}>
-                        <Text style ={styles.title}>Saldo disponivel</Text>
-                        <Text style = {styles.description}>R$ 000.000,99</Text>
-                    </View>
+                    </CardHeader>
+                    <CardContent>
+                        <Title>Saldo disponivel</Title>
+                        <Description>R$ 000.000,99</Description>
+                    </CardContent>
                     
                     
-                    <View style={styles.cardFooter}>
-                       <Text style ={styles.anottation}>
+                    <CardFooter>
+                       <Anottation>
                            Transferência de R$00,99 recebida de Dan hoje as 23:59
-                        </Text> 
-                    </View>
-                </View>
-            </View>
+                        </Anottation> 
+                    </CardFooter>
+                </Card>
+            </Content>
             <Tab/>
-        </View>
+        </Container>
     )
 }

@@ -1,40 +1,40 @@
 import React from 'react';
-import styles from './styles';
+import {Container,Tabcontainer,TabItem,Tabtext,styles} from './styles';
 import { View, Text, ScrollView } from 'react-native';
 import Icon from '@expo/vector-icons/MaterialIcons';
 export default function Tab() {
     return (
-        <View style={styles.container}>
+        <Container>
             <ScrollView horizontal= {true}
                 showsHorizontalScrollIndicator={false}
-                contentContainerStyle={styles.tabcontainer}
+                Container ={Tabcontainer}
             >
-                <View style={styles.tabItem}>
+                <TabItem>
                     <Icon name='person-add' size={24} color='#FFF' />
-                    <Text style={styles.tabText}>Indicar amigos</Text>
-                </View>
+                    <Tabtext>Indicar amigos</Tabtext>
+                </TabItem>
 
-                <View style={styles.tabItem}>
+                <TabItem>
                     <Icon name='chat-bubble-outline' size={24} color='#FFF' />
-                    <Text style={styles.tabText}>Cobrar</Text>
-                </View>
+                    <Tabtext>Cobrar</Tabtext>
+                </TabItem>
 
-                <View style={styles.tabItem}>
+                <TabItem>
                     <Icon name='arrow-downward' size={24} color='#FFF' />
-                    <Text style={styles.tabText}>Depositar</Text>
-                </View>
+                    <Tabtext>Depositar</Tabtext>
+                </TabItem>
 
-                <View style={styles.tabItem}>
+                <TabItem>
                     <Icon name='arrow-upward' size={24} color='#FFF' />
-                    <Text style={styles.tabText}>Transferir</Text>
+                    <Tabtext>Transferir</Tabtext>
 
-                </View>
-                <View style={styles.tabItem}>
+                </TabItem>
+                <TabItem>
                     <Icon name='lock' size={24} color='#FFF' />
-                    <Text style={styles.tabText}>Bloquear Cartão</Text>
+                    <Tabtext>Bloquear Cartão</Tabtext>
 
-                </View>
+                </TabItem>
 </ScrollView>
-        </View>
+        </Container>
     )
 }
