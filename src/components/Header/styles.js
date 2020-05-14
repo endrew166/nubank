@@ -20,25 +20,3 @@ color:#FFF;
 font-weight:bold;
 margin-left:8px; 
 `
-
-export default styles = StyleSheet.create({
-    container:{
-        alignItems: 'center',
-        paddingTop: 40,
-        paddingHorizontal:0,
-        paddingBottom:0,
-    },
-    top:{
-        flexDirection:'row',
-        alignItems:"center",
-        marginBottom:18,
-    }
-    ,
-
-    title:{
-        fontSize:18,    
-        color:"#FFF",
-        fontWeight:'bold',
-        marginLeft:8,    
-    }
-});
